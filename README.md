@@ -1,6 +1,10 @@
 # Welcome to our Billshare!
 
 
+
+https://github.com/OrestisIon/first-website/assets/91958928/2a5950bb-743d-41fd-834a-5282ca176814
+
+
 ## Getting Started
 The first step when visiting our website is to create an account or log in if you're an existing user. For new users, we've made it simple and accessible - just click on the "Create Account" button and complete the required form. Once registered, you'll have access to all the features our platform offers.
 
