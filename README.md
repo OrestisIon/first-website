@@ -1,29 +1,44 @@
-# README and VIDEO
-
-Your _readme_ goes here
-
-Your _video_ must replace the `demo.mp4` file in this folder
-
-Before submitting your coursework, run `./clean.sh` as this will remove the virtual environment which can be reconstructed locally.
-
-First thing in the website, there is a login requirement. I you are a new user you can create a new account
-by pressing the easily accessible button and completing the required form.
-Once register then user can sign in. There is a menu bar where the user can access the different parts of the website.
-Firstly the user can add friends by writing their emails. Then the user can create Groups, where each group they
-choose who from their friends to include. After creating groups, the user can then create bills and
-specify to which group the bill will be distributed. The application will then split the amount and create a bill for
-each user in the Group. When each of the users in the new bill log into their page they will be notified that a new bill has 
-been added. Each user who has a bill can check the he paid the bill, see who already paid the bill, and view the bill balance
-
-All the forms are checked with JQuery-AJAX, therefore there is a responsive interaction between the form and
-the customer.
-The website is also integrated such that a scroll bar makes an appearance when not all the data can be shown.
+# Welcome to our Billshare!
 
 
-REFERENCES:
-For the CSS:
+## Getting Started
+The first step when visiting our website is to create an account or log in if you're an existing user. For new users, we've made it simple and accessible - just click on the "Create Account" button and complete the required form. Once registered, you'll have access to all the features our platform offers.
+
+## Navigation
+Our website features an intuitive menu bar that provides easy access to various sections of the platform, ensuring you can quickly find what you need.
+
+## Connecting with Friends
+One of the key features is the ability to connect with friends. You can add friends by entering their email addresses, making it effortless to build your network.
+
+## Organize with Groups
+Create custom groups and decide which friends to include in each group. This feature allows you to manage your connections efficiently.
+
+## Managing Bills
+Once you've organized your friends into groups, you can start creating bills. Specify the group to which the bill will be distributed, and our application will handle the rest. It will automatically split the amount and generate a bill for each user in the group.
+
+## Stay Informed
+When a new bill is created, users in the group will be notified upon logging into their account. This ensures that everyone is aware of new financial obligations.
+
+## Bill Tracking
+Users with bills can easily check if they've paid a bill, see who else has paid, and view the current bill balance. This feature simplifies group expenses and keeps everyone informed.
+
+## Responsive Interaction
+All our forms are equipped with JQuery-AJAX, guaranteeing a responsive and seamless interaction between you and the platform.
+
+## Scrollable Content
+For your convenience, our website dynamically displays a scrollbar when not all data can fit on the screen, making sure you can access all relevant information effortlessly.
+
+## Installing
+Once installed run `./clean.sh` to remove the virtual environment which can be reconstructed locally.
+
+
+
+
+## REFERENCES:
+
+### For the CSS:
 I access codepen.io and found some nice templates where I was inspired by the user @prathkum. 
 
-For HTML-SQL-Flask-JAVASCRIPT and everything else:
+### For HTML-SQL-Flask-JAVASCRIPT and everything else:
 I access online forums such as stackoverflow.com , geeksforgeeks.org, w3schools.com
 All of the images where downloaded from google. I have not created any.
