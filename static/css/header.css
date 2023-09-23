@@ -1,0 +1,85 @@
+* {
+  font-family: Montserrat;
+}
+body{
+    color: rgb(50, 151, 197);
+    font-family: Montserrat;
+    font: bold;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+    place-items: center;
+  }
+.navigationbar{
+    color: rgb(50, 151, 197);
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    top: 0;
+    width: 100%;
+    
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li form {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li form:hover {
+    background-color: #111;
+  }
+
+  input[type=button], input[type=submit], input[type=reset] {
+    background-color: rgba(53, 51, 51, 0.055);
+    border: none;
+    color: white;
+    padding: 30px 50px;
+    text-decoration: none;
+    margin: 0px 0px;
+    cursor: pointer;
+  }
+img{
+  top:0;
+  width: 10%;
+  height: 10%;
+}
+.logo{
+  background-color: #111;
+}
+body  {
+  background-image: url("background.jpg");
+  background-color: #cccccc;
+}
+img{
+  width: 250px; 
+ height: 200px; 
+}
+button{
+  color: rgb(119, 116, 116);
+      margin-top: 0px;
+      background: rgb(46, 45, 45);
+      height: 80px;
+      width: 100px;
+      /* border-radius: 10px; */
+      cursor: pointer;
+      font-weight: 900;
+       /* box-shadow: 5px 5px 5px #cbced1, -2px -2px 2px grey; */
+      transition: 0.5s;
+      font-size: larger;
+      
+    }

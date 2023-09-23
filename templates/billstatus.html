@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="static/css/main.css" type="text/css" charset="utf-8"> 
+</head>
+<body>
+    {% include 'header.html' %}
+    <div class="container">
+    <h1>The {{groupbill_name}} Bill Status</h1>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th width='200px'>Users who Paid the Bill:</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for entry in userspaid %}
+               <p> {{entry.username}}</p>
+            <tr>    
+                    <td>{{entry.username}}</td>
+                    <td>{{entry.email}}</td>
+            </tr>
+            {% else %}
+            <tr>
+                <td>No user has paid the bill yet</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th width='200px'>Users who did not pay the the Bill:</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for entry in users_not_paid %}
+                    <tr>
+                        <td>{{entry.username}}</td>
+                        <td>{{entry.email}}</td>
+                    </tr>
+            {% else %}
+            <tr>
+                <td>All the users have paid the bill</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+<body>
+</html>

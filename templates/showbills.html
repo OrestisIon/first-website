@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="static/css/main.css" type="text/css" charset="utf-8"> 
+</head>
+    {% include 'header.html' %}
+    <div class="container">
+    <table>
+        <thead>
+            <tr>
+                <h1>All the Bills</h1>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><h3 class="list">Title</h3></td>
+                <td><h3 class="list">User's Balance</h3></td>
+            </tr>
+            {% for entry in bills %}
+            <tr>
+               
+                <td><a href='/billdetails?groupbill_id={{entry.groupbill_id}}'> {{entry.name}}  </a></td>
+                <td>{{entry.amount}}£</td>
+             
+            </tr>
+            {% else %}
+            <tr>
+                <td><p>No bills to show<p></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <label for="addbill">Click to the button below to add a new bill:</label>
+    
+    <a href="/addbill"><button class="groupmain"> ADD </button></a>
+    
+
+
+</div>
+</html>

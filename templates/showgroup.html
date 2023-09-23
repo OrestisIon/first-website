@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="static/css/main.css" type="text/css" charset="utf-8"> 
+</head>
+    {% include 'header.html' %}
+    <div class="container">
+    <table>
+        <thead>
+            <tr>
+                <h1>All the {{group.name}} members</h1>
+            </tr>
+        </thead>
+        <tbody>
+
+            {% for entry in users %}
+            <tr>
+                <td> {{entry.username}} </td>
+                <td>{{entry.email}}</td>
+
+            </tr>
+            {% else %}
+            <tr>
+                <td><p>group is empty<p></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <label for="addbill">Click to the button below to add a new group:</label>
+            
+    <form name="addgroup" action='addgroup'>
+        <input type='submit' value='Add group'>
+    </form>
+</div>
+</html>

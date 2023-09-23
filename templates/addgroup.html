@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="static/css/main.css" type="text/css"charset="utf-8"> 
+    <script src='static/js/jquery-3.6.0.min.js'> </script>
+    <script src='static/js/validation.js'></script>
+</head>
+<body>
+    {% include 'header.html' %} 
+    <div class="Title">
+        <h2>Add a new Group</h2>
+    </div>
+    <div class="add_group_members">
+        <table>
+            <thead>
+                <tr>
+                    <th width='200px'>Choose Friends to add</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                {% for entry in friends %}
+                <tr>
+                    <td> <div class="add"> <div class="add{{entry.email}}"> <button onclick="addButton(event)" id="{{entry.email}}">ADD</button> </div></div> </td>
+                    <td> {{entry.username}} </td>
+                    <td> {{entry.email}} </td>
+                    <td> <div class="remove"> <div class="remove{{entry.email}}"> <button onclick="removeButton(event)" id="{{entry.email}}">Remove</button> </div> </div> </td>
+                </tr>
+                {% else %}
+                <tr>
+                    <td>No Friends to show</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div class="create_group">
+        <form id="login" onsubmit="submitButtonClick(event)" action="/" method="get"> 
+            <label for="name"> Group Name:</label>
+            <input id="groupname" name="name"><br>
+            <button type="submit" class="groupmain">ADD</button>
+        </form>
+    </div>
+    <div id="alerts">
+    </div>
+    <div id="alerts1">
+    </div>
+    <br>
+    <a href="/groups"><button class="groupmain" >Complete</button></a>
+
+</body>
+    <script>
+        $(function () {
+            $(".add_group_members").toggle();
+            groupid=0;
+        });
+    </script>
+</html>

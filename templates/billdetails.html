@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="static/css/main.css" type="text/css" charset="utf-8"> 
+</head>
+    {% include 'header.html' %}
+    <div class="container">
+    <h1>The {{groupbill.name}} Bill Details</h1>
+   <table>
+        <tbody>
+            <tr>
+                <td> Bill created by: </td>
+                <td>{{creator.username}}</td>
+
+            </tr>
+            <tr>
+                <td>Remaining Bill Balance:  </td>
+                <td>{{groupbill.balance}}</td>
+            </tr>
+            <tr>
+                <td> Total Bill Amount:  </td>
+                <td>{{groupbill.amount}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <a href='/billstatus?groupbill_id={{groupbill.id}}'><button id="btngroups">View bill status</button</a><br>
+    <a href='/paybill?groupbill_id={{groupbill.id}}'><button id="btngroups">Pay bill </button</a>
+    </div>
+   
+  
+    <br>
+</html>

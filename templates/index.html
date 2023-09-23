@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="static/css/main.css" type="text/css" charset="utf-8"> 
+    <script src='static/js/jquery-3.6.0.min.js'> </script>
+    <script src='static/js/mainpage.js'></script> 
+
+</head>
+    
+    <body>
+        {% if current_user.is_authenticated %}
+            {% include 'header.html' %} 
+            <div class="container">
+            
+            <h1>Welcome Back {{current_user.username}}! </h1>
+            <p>This is your own personal page!</p><br>
+            <p>The Splitnator is an app that can help you manage your bills</p><br>
+            
+            <div id="main">
+            </div>
+        {%else%}
+            <h1>Welcome to Splitnator</h1>
+            <h2>You cannot access this page because you are not logged in!</h2>
+            <form name="index" action='login'>
+                <input type='submit' value='Go back to login'>
+            </form>
+        {%endif%}
+    </div>
+        
+    </body>
+</html>

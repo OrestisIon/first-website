@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="static/css/header.css" type="text/css" charset="utf-8">    
+</head>
+    <div class="logo">
+        <img src="/static/css/mylogo.jpg" alt="Logo">
+    </div>
+    <div class="nav-bar">
+    <ul>
+    <div id="box">
+        <li>
+            <a href="{{url_for('logout')}}"><button>Log out </button></a>
+        </li>
+    </div>
+    <div id="box">
+        <li>
+            <a href="{{url_for('bills')}}"><button>Bills</button></a>
+        </li>
+    </div>
+    <div id="box">
+        <li>
+            <a href="{{url_for('friends')}}"><button>Friends</button></a>
+        </li>
+    </div>
+    <div id="box">
+        <li>
+            <a href="{{url_for('groups')}}"><button>Groups</button></a>
+        </li>
+    </div>
+    <div id="box">
+        <li>
+            <a href="{{url_for('index')}}"><button>Home</button></a>
+        </li>
+    </div>
+    </ul>
+</div>
+    <title>Warwick Splitnator</title>
+    <br>
+    <br>
+    <br>
+    <br>
+</html>

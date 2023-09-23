@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="static/css/main.css" type="text/css" charset="utf-8"> 
+</head>
+    <body>
+        {% include 'header.html' %} 
+        <div class="container">
+            <h1>Friends List of {{current_user.username}}! </h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th width='200px'>All the Friends</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    {% for entry in friends %}
+                    <tr>
+                        <td>{{entry.username}}</td>
+                        <td>{{entry.email}}</td>
+                    </tr>
+                    {% else %}
+                    <tr>
+                        <td>No Friends to show</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <br>
+            <label for="addfriend">Click to the button to add friends to your friendlist:</label>
+            <a href="/addfriend"><button class="groupmain" >ADD</button></a>
+            <br>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,142 @@
+.container {
+    position: relative;
+    width: 500px;
+    height: 700px;
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #b2b8b8;
+    box-shadow: 14px 14px 20px #6497c9, -14px -14px 20px #6497c9;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    place-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    left: 40%;
+  }
+  input {
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 10px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white; 
+  }
+  label{
+    font-size: large;
+    font: bolder;
+  }
+  
+  .button1 {
+    color: white;
+    margin-top: 20px;
+    background: #1DA1F2;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 900;
+    transition: 0.5s;
+  }
+  
+  button:hover {
+    box-shadow: none;
+  }
+  #alerts{
+    color: rgb(20, 11, 13);
+    font-size: large;
+    font: bolder;
+    background-color: #ca4a39;
+    border-radius: 5px;
+    font-family: sans-serif;
+  }
+  #alerts1{
+    color: rgb(20, 11, 13);
+    font-size: large;
+    font: bolder;
+    background-color: #1c9730;
+    border-radius: 5px;
+    font-family: sans-serif;
+  }
+  #btngroups{
+    color: white;
+    margin-top: 20px;
+    margin-left: 60%;
+    background: #1DA1F2;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 900;
+    transition: 0.5s;
+    font-size: 14px;
+  
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  #btnsuccess{
+    color: rgb(14, 12, 12);
+    margin-top: 20px;
+    margin-left: 60%;
+    background: #d1c413;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 900;
+    transition: 0.5s;
+    font-size: 14px;
+  
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+.groupmain{
+  color: white;
+  margin-top: 30px;
+  background: #1DA1F2;
+  
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 900;
+  transition: 0.5s;
+  font-size: 14px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+p{
+  font-size: 20px;
+}
+table{
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  place-items: center;
+  margin-left: 23%;
+
+}
+.final{
+  position: relative;
+  width: 500px;
+  height: 700px;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #74cf88;
+  box-shadow: 16px 16px 25px #75c964, -16px -16px 25px #75c964;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  place-items: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  left: 40%;
+}
+form{
+  margin:auto;
+}
+.list{
+  text-decoration: underline wavy rgb(0, 153, 255) 5px;
+}
+td{
+  font-size: 20px;
+}

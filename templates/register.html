@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='static/js/jquery-3.6.0.min.js'> </script>
+    <script src='static/js/validation.js'></script>
+    <link rel="stylesheet" href="static/css/register.css" type="text/css"
+    charset="utf-8">  
+</head>
+    <body>
+        <div class="container">
+            <div class="brand-logo"></div>
+            <div class="brand-title">Registration Page</div>
+            <div class="inputs">
+            <label for="username" >NAME</label>
+            <input id="username" name="username" placeholder="e.g. Maria"><br>
+            <label for="email" >E-MAIL ADDRESS</label>
+            <input id="email" type="email" name="email" placeholder="e.g. maria@gmail.com"><br>
+            <label for="password" >PASSWORD</label>
+            <input id="password" type="password" name="password" placeholder="Min 8 Characters">
+            <label for="password2" >CONFIRM PASSWORD</label>
+            <input id="password2" type="password" name="password2" placeholder="Same as above">
+            <button onclick="buttonRegister(event)"> REGISTER</button>
+            <a href="/"><button>GO BACK</button></a>
+            </div>
+        <div id="alerts">
+        </div>
+    </div>
+    </body>
+</html>

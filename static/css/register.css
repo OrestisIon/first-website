@@ -1,0 +1,112 @@
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #ecf0f3;
+    background-image: url("back1.jpeg");
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    place-items: center;
+    overflow: hidden;
+    font-family: Montserrat;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  .container {
+    position: relative;
+    width: 350px;
+    height: 700px;
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #616160;
+    box-shadow: 14px 14px 20px #5c2e86, -14px -14px 20px #5c2e86;
+  }
+  
+  .brand-logo {
+    height: 200px;
+    width: 200px;
+    background: url("mylogo.jpg");
+    margin: auto;
+    border-radius: 100%;
+    box-sizing: border-box;
+    box-shadow: 7px 7px 10px #5c2e86, -7px -7px 10px #5c2e86;
+  }
+  
+  .brand-title {
+    margin-top: 10px;
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: #5c2e86;
+    letter-spacing: 1px;
+  }
+  
+  .inputs {
+    text-align: left;
+    margin-top: 30px;
+  }
+  
+  label, input, button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  label {
+    margin-bottom: 4px;
+  }
+  
+  label:nth-of-type(2) {
+    margin-top: 12px;
+  }
+  
+  input::placeholder {
+    color: rgb(110, 112, 112);
+  }
+  
+  input {
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white; 
+  }
+  
+  button {
+    color: white;
+    margin-top: 20px;
+    background: #2a2c2c;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: 6px 6px 6px #5c2e86, -6px -6px 6px #5c2e86;
+    transition: 0.5s;
+  }
+  
+  button:hover {
+    box-shadow: none;
+  }
+  
+  h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #alerts{
+    color: rgb(20, 11, 13);
+    font-size: large;
+    font: bolder;
+    background-color: #ca4a39;
+    border-radius: 5px;
+    font-family: sans-serif;
+  }

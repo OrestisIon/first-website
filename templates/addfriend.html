@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="static/css/main.css" type="text/css" charset="utf-8"> 
+</head>
+<body>
+    {% include 'header.html' %} 
+    <div class="Title">
+        <h2>Add a new Friend</h2>
+    </div>
+    <form action="/addfriend" method="POST">
+        <label for="email">Add friend's email address:</label>
+        <input type="email" name="email"><br>
+        <button type="submit" class="groupmain"> ADD </button>
+    </form>
+    </div>
+</body>
+</html>
