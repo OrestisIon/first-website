@@ -1,8 +1,9 @@
 # Welcome to our Billshare!
 
 
+https://github.com/OrestisIon/first-website/assets/91958928/ba896ac7-505a-48c9-881c-43750c14657b
 
-https://github.com/OrestisIon/first-website/assets/91958928/2a5950bb-743d-41fd-834a-5282ca176814
+
 
 
 ## Getting Started
